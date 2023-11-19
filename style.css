@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background: #222;
+    width: 50%;
+    margin: auto;
+}
+
+h1{
+    margin: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+#input-wrapper{
+    text-align: center;
+}
+.sbarrata{
+    text-decoration: line-through;
+}
+#lista{
+    
+   border: 2px solid white;
+}
+.myLista{
+    margin: 20px;
+}
+.elenco{
+    margin: 30px ;
+}
+#delete{
+    margin-left: 30px;
+}

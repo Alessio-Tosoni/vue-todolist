@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="lista">
+            <h1>Todo list</h1>
+            <div id="input-wrapper">
+                <input id="testoNuovo" type="text" @keyup.enter="aggiungiAttività ()" placeholder="scrivi l'attività da inserire">
+                <button id="aggiungi" @click="aggiungiAttività ()">aggiungi</button>
+            </div>
+            <ul class="elenco">
+                <li class="myLista" v-for="(item,index) in coseDaFare" v-bind:class="{'sbarrata' : item.stato}">{{item.task}}<button id="delete" @click="rimuovi(index)">X</button></li>
+            </ul>
+                
+
+
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
